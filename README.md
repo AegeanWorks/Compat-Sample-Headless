@@ -6,10 +6,10 @@ Headless sample for AI-compat proof
 
 ## ⚡ 30-Second Cold-Start Quick Reference
 
-- **Runtime Prerequisites**: <FILL: each runtime this project needs and its minimum version>
+- **Runtime Prerequisites**: Python >=3.10 (stdlib only; verified on 3.14.7)
 - **Canonical Regression Shield Gate**:
   ```bash
-  <FILL: the command that runs the whole test suite from this project root>
+  python -m unittest discover
   ```
 
 ### 🛠️ AIKit Commands (run from the AIKit folder)
@@ -30,6 +30,10 @@ compat-sample-headless/
 ├── LICENSES/                 <- REUSE license texts
 ├── REUSE.toml                <- Machine-readable SPDX metadata
 ├── README.md
+├── inventory.py              <- AI-compat inventory: kind|name|locator lines (ADR-315)
+├── demo.py                   <- AI-compat scripted drive: WORLD-DELTA lines (ADR-315)
+├── assets/                   <- brand logo and social preview (pending review)
+├── tests/                    <- regression shield: compat drive checks
 └── .aikit/                   <- this project's memory: record, ledger, decisions
 ```
 
