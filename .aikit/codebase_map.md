@@ -8,9 +8,9 @@
 ## 📊 Codebase Metrics
 - **Total Python Modules**: `4`
 - **Total Classes**: `1`
-- **Total Top-Level Functions**: `1`
-- **Total Class Methods**: `3`
-- **Total Source Lines**: `66`
+- **Total Top-Level Functions**: `2`
+- **Total Class Methods**: `4`
+- **Total Source Lines**: `90`
 
 ---
 
@@ -19,7 +19,10 @@
 ### [`demo.py`](demo.py)
 > *Headless scripted drive: prints WORLD-DELTA lines, no input, exits 0.*
 
-**Size**: `10` lines (`361` bytes)
+**Size**: `22` lines (`903` bytes)
+
+**Functions:**
+- `def _parse_seed(argv)`
 
 ---
 
@@ -40,13 +43,14 @@
 ### [`tests/test_compat.py`](tests/test_compat.py)
 > *Regression shield for the headless compat drive (stdlib only).*
 
-**Size**: `49` lines (`1608` bytes)
+**Size**: `61` lines (`2253` bytes)
 
 **Classes:**
 - `class CompatDriveTest`
   - Method `.test_inventory_lines_are_kind_name_locator()`
   - Method `.test_scripted_drive_prints_world_delta()`
   - Method `.test_scripted_drive_requires_flag()`
+  - Method `.test_seeded_replay_is_deterministic()`
 
 **Functions:**
 - `def run_script(name, *args, timeout)`

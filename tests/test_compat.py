@@ -44,6 +44,18 @@ class CompatDriveTest(unittest.TestCase):
         code, _out = run_script("demo.py")
         self.assertEqual(code, 2)
 
+    def test_seeded_replay_is_deterministic(self):
+        first_code, first_out = run_script("demo.py", "--scripted", "--seed", "7")
+        second_code, second_out = run_script("demo.py", "--scripted", "--seed", "7")
+        self.assertEqual(first_code, 0, msg=first_out[-400:])
+        self.assertEqual(second_code, 0, msg=second_out[-400:])
+        self.assertIn("SEED: 7", first_out)
+        self.assertIn("WORLD-DELTA: counter=7->8", first_out)
+        self.assertEqual(
+            sorted(l for l in first_out.splitlines() if "WORLD-DELTA:" in l),
+            sorted(l for l in second_out.splitlines() if "WORLD-DELTA:" in l),
+        )
+
 
 if __name__ == "__main__":
     unittest.main()
