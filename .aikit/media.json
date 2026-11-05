@@ -15,17 +15,31 @@
   "assets": {
     "logo": {
       "path": "assets/logo.svg",
-      "status": "pending_review",
+      "status": "approved",
       "commit": "",
       "generated_at": "2026-11-03T00:20:45",
-      "review": null
+      "review": {
+        "status": "approved",
+        "reviewer": "agent:main",
+        "method": "structural",
+        "notes": "Terminal motif mark, correct title/desc, CS monogram plus AEGEANWORKS wordmark, coherent palette.",
+        "score": null,
+        "reviewed_at": "2026-11-05T22:06:46"
+      }
     },
     "social_preview": {
       "path": "assets/social-preview.svg",
-      "status": "pending_review",
+      "status": "approved",
       "commit": "",
       "generated_at": "2026-11-03T00:20:45",
-      "review": null
+      "review": {
+        "status": "approved",
+        "reviewer": "agent:main",
+        "method": "structural",
+        "notes": "Split layout, correct project name and repo slug, tagline matches README description, no defects.",
+        "score": null,
+        "reviewed_at": "2026-11-05T22:06:46"
+      }
     }
   },
   "screenshots": []
