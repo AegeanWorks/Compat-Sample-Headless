@@ -6,7 +6,9 @@
 <!-- aegean:media:end -->
 
 
-Headless sample for AI-compat proof
+Headless proof sample for the AI-compat drive contract: `inventory.py` lists the
+CLI and handler entry points, and `demo.py` prints seeded `WORLD-DELTA` lines.
+No interface, no dependencies.
 
 ## ⚡ 30-Second Cold-Start Quick Reference
 
