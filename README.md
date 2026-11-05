@@ -8,7 +8,8 @@
 > **Archived**: Retired experiment (archived 2026-11-05). This project is read-only; its GitHub repository is archived.
 
 
-Headless proof sample for the AI-compat drive contract: `inventory.py` lists the
+Built for AIKit (ADR-315): headless proof sample for the AI-compat drive
+contract: `inventory.py` lists the
 CLI and handler entry points, and `demo.py` prints seeded `WORLD-DELTA` lines.
 No interface, no dependencies.
 
